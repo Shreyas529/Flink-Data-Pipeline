@@ -196,7 +196,7 @@ The primary objective is to:
 ### Core Technologies
 - **Apache Flink 1.x**: Stream processing framework (Table API)
 - **Apache Kafka**: Distributed message broker
-- **Python 3.x**: Primary programming language
+- **Python 3.7+**: Primary programming language (minimum version for PyFlink compatibility)
 - **PyFlink**: Python API for Apache Flink
 
 ### Python Libraries
@@ -274,7 +274,7 @@ The primary objective is to:
 ### Prerequisites
 1. **Apache Kafka**: Running on localhost:9092
 2. **Apache Flink**: Proper Python environment with PyFlink
-3. **Flink Kafka Connector**: JAR file must be available (update path in `flink_processor_table_api.py`)
+3. **Flink Kafka Connector**: JAR file must be available (update path in `flink_processor_table_api.py` lines 16-18)
 4. **PostgreSQL** (optional): Only if running with consumers enabled
 
 ### Running the Pipeline
@@ -297,7 +297,7 @@ python driver.py --impl none
 ```
 
 ### Environment Setup Notes
-- Update Flink JAR path in `flink_processor_table_api.py` (line 17) to match local installation
+- Update Flink JAR path in `flink_processor_table_api.py` (lines 16-18) to match local installation
 - Ensure Kafka topics are accessible and have sufficient storage
 - Monitor Flink Web UI at `http://localhost:8085` during execution
 

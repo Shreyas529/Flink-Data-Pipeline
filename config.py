@@ -1,8 +1,8 @@
-DB_HOST = "localhost"
+DB_HOST = "host"
 DB_PORT = 5432
-DB_NAME = "sds"
-DB_USER = "myuser"
-DB_PASS = "mypassword"
+DB_NAME = "dbname"
+DB_USER = "user"
+DB_PASS = "password"
 
 NUM_PRODUCERS = 3
 NUM_CONSUMERS = NUM_PRODUCERS
